@@ -35,9 +35,10 @@
     text-align: center;
     margin-bottom: 31px;
   }
-  span.brand-app {
+  .SpanGifosTitle {
     color: #50e3c2;
   }
+  // Encolumno imagen y searchbarr //
   .containerSearcherSub {
     display: flex;
     justify-content: center;
@@ -94,20 +95,16 @@
       }
     }
   
-
-  .botonSearch {
-    width: 24px;
-    height: 24px;
-    background-image: url(/imagenes/icon-search.svg);
-    background-repeat: no-repeat;
-    margin-left: 24px;
-    cursor: pointer;
-
-      //  body.darkTheme & {
-      //   background-image: url(../assets/images/icon-search-mod-noc.svg);
-      //     }
-
-      }
+    #searchBtn {
+      background-image: url(/imagenes/icon-search.svg);
+      width: 24px;
+      height: 24px;
+      border:none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+     margin-left:-5px; /*Muevo la lupa*/
+      cursor: pointer;
+    }
     }
   }
 
@@ -172,9 +169,9 @@
     text-align: center;
     line-height: 30px;
 
-    body.darkTheme & {
-      color: #fff;
-    }
+    // body.darkTheme & {
+    //   color: #fff;
+    // }
   }
 
   .trendingSectionTexts {

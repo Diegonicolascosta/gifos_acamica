@@ -29,19 +29,18 @@
 
     <main>
       <section class="containerSeacherGral">
-        <h1>Inspírate, busca, guarda, y crea los mejores <span class="brand-app">GIFOS</span></h1>
+        <h1>Inspírate, busca, guarda, y crea los mejores <span class="SpanGifosTitle">GIFOS</span></h1>
 
         <div class="containerSearcherSub">
           <div class="searcherImg">
             <img src="/imagenes/ilustra_header.svg" alt="gifos" />
           </div>
 
-          <div class="searcherGifContainer">
-            <div class="searcherInput">
-              <input id="inputSearch" type="text" placeholder="Busca GIFOS y más..." />
-              <!-- <img id="img-search-btn" src="./assets/images/icon-search.svg" alt="gifos" /> -->
-              <span id="btnSearch" class="botonSearch"></span>
-            </div>
+          <div class="searcherGifContainer">            
+          <form class="searcherInput">
+              <input type="text" name="search_Input" id="search_Input" placeholder="Busca GIFOS y más">
+              <button type="submit" id="searchBtn"></button>
+          </form>            
             </div>
             
 
@@ -52,12 +51,14 @@
 
           <div class="space"></div>
 
-          <div class="searcherReturn">
+          <!-- <div class="searcherReturn">
             <h2 id="titleReturn"></h2>
             <div id="searcherReturnApi" class="searcherGalleryResults"></div>
             <div class="searcherReturnVerMas">             
             </div>
+          </div> -->
           </div>
+          </section>
 
          <section class="trendingSection">
           <h2>Trending GIFOS</h2>
@@ -93,6 +94,6 @@
         </div>
       </footer>
   
-      <script src="./gifos.js"></script>
+      <script src="./scripts/gifos.js"></script>
     </body>
   </html>
