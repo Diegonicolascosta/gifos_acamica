@@ -38,11 +38,13 @@
 
           <div class="searcherGifContainer">            
           <form class="searcherInput">
-              <input type="text" name="search_Input" id="search_Input" placeholder="Busca GIFOS y más">
+              <input type="text" name="searchInput" id="searchInput" placeholder="Busca GIFOS y más">
               <button type="submit" id="searchBtn"></button>
           </form>            
             </div>
-            
+             <div class="suggestionsBox" id="suggestionsBoxId">
+               <ul id="suggestionsUl"></ul>
+             </div>
 
           <div class="trendingText">
             <h2>Trending:</h2>
@@ -51,12 +53,12 @@
 
           <div class="space"></div>
 
-          <!-- <div class="searcherReturn">
+          <div class="searcherReturn">
             <h2 id="titleReturn"></h2>
             <div id="searcherReturnApi" class="searcherGalleryResults"></div>
             <div class="searcherReturnVerMas">             
             </div>
-          </div> -->
+          </div>
           </div>
           </section>
 
@@ -67,9 +69,10 @@
             <p>Mira los últimos GIFOS de nuestra comunidad.</p>
           </div>
   
-          <div class="trendingGifResults"></div>
-
-            
+          
+          <div id= "trendingGifResults" class = gifResultsTrend>
+          </div>
+        
                             
 
         </main>    
@@ -93,7 +96,8 @@
           <p>© GIFOS 2020 All Rights Reserved.</p>
         </div>
       </footer>
-  
+     
+      <script src="./scripts/funtions.js"></script>  
       <script src="./scripts/gifos.js"></script>
     </body>
   </html>
