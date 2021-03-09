@@ -104,7 +104,16 @@ main {
       }
     }
   }
+ 
+  .styleBullet {   
+    //padding-left: 5px;
+    list-style-image: url(/imagenes/icon-search.svg); 
+    cursor: pointer;
 
+    }
+
+
+  
   .trendingText {
     display: flex;
     justify-content: center;

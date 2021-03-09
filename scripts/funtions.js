@@ -39,32 +39,28 @@ async function suggestions(term) {
 // FUNCTION DRAWSUGGESTIONS //
 
 function drawSuggest(term) {
-  //console.log(term);  
+  //console.log(term);
   let suggestList = document.getElementById("suggestionsUl");
-  suggestList.innerHTML= '';
+  suggestList.innerHTML = "";
   let array = term.data;
   array.forEach((element) => {
     let item = document.createElement("li");
-    item.className += "sin_bullet";
+    item.className += "styleBullet";
     let itemSuggest = document.createTextNode(element.name);
     item.appendChild(itemSuggest);
-    
     item.setAttribute("onclick", "select_list(this)");
     suggestList.appendChild(item);
-    
   });
 }
 
 function select_list(event) {
-  console.log("escucho");
+  //console.log("listen");
   console.log(event.innerText);
   let resultado = event.innerText;
-  if (resultado) {
-    //Aca le pego a la api de search
-    getSearch(resultado);
+  if (resultado) {    
+    getSearch(resultado); // go api search
   }
 }
-
 
 // FUNCTION PRESUGGEST //
 // function presuggest (term) {
